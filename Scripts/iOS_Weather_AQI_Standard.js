@@ -1,16 +1,7 @@
-// Developed by Hackl0us (https://github.com/hackl0us)
-// Adopted to Quantumult X Rewrite Script by laosb (https://lao.sb/gh)
 
-// STEP 1: 前往 https://aqicn.org/data-platform/token/ 注册账户，将申请的 API Token 填入下方
 const aqicnToken = '42c21b7fdafbd5935f26b1102c56114272e682a2'
 
-// STEP 2: 参考下方配置片段，在代理工具的配置文件中添加对应的配置。注意：script-response-body 后应该替换为添加 apicnToken 值后的脚本路径
-/*
-[rewrite_local]
-https://weather-data.apple.com/v1/weather/[\w-_]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+ url script-response-body aqicn.js
-[mitm]
-hostname = weather-data.apple.com
-*/
+
 
 const AirQualityStandard = {
 	CN: 'HJ6332012.1',
