@@ -110,7 +110,8 @@ function roundHours(time, method) {
 	return time;
 }
 
-$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function (error, _response, data) {
+$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${42c21b7fdafbd5935f26b1102c56114272e682a2
+}`, function (error, _response, data) {
 	if (error) {
 		let body = $response.body
 		$done({ body })
