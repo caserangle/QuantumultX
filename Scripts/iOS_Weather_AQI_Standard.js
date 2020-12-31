@@ -1,7 +1,7 @@
 // Developed by Hackl0us (https://github.com/hackl0us)
 
 // STEP 1: 前往 https://aqicn.org/data-platform/token/ 注册账户，将申请的 API Token 填入下方
-const aqicnToken = ''
+const aqicnToken = '42c21b7fdafbd5935f26b1102c56114272e682a2'
 
 // STEP 2: 参考下方配置片段，在代理工具的配置文件中添加对应的配置。注意：script-path 后应该替换为添加 apicnToken 值后的脚本路径
 /*
@@ -110,8 +110,7 @@ function roundHours(time, method) {
 	return time;
 }
 
-$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${42c21b7fdafbd5935f26b1102c56114272e682a2
-}`, function (error, _response, data) {
+$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function (error, _response, data) {
 	if (error) {
 		let body = $response.body
 		$done({ body })
